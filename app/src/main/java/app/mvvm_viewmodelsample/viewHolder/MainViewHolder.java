@@ -7,7 +7,7 @@ import app.mvvm_viewmodelsample.databinding.AdapterUserDataBinding;
 import app.mvvm_viewmodelsample.model.UserData;
 
 public class MainViewHolder extends RecyclerView.ViewHolder {
-    private AdapterUserDataBinding mBinding;
+    public AdapterUserDataBinding mBinding;
 
     public MainViewHolder(@NonNull AdapterUserDataBinding binding) {
         super(binding.getRoot());
@@ -15,6 +15,7 @@ public class MainViewHolder extends RecyclerView.ViewHolder {
     }
 
     public void bind(UserData userData) {
+        //here make calculation to show data on UI
         mBinding.setData(userData);
         mBinding.executePendingBindings();
     }

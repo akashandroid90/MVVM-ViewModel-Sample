@@ -7,4 +7,9 @@ public class UserData {
     public String getName() {
         return first_name + " " + last_name;
     }
+
+    @Override
+    public String toString() {
+        return getName() + " " + email + " " + gender;
+    }
 }
